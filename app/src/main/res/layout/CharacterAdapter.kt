@@ -31,7 +31,7 @@ class CharacterAdapter (private val transformers: List<Transformer>) : RecyclerV
         val characterName: TextView = itemView.findViewById(R.id.characterName)
         val characterAlliance: TextView = itemView.findViewById(R.id.characterAlliance)
         val characterVehicle: TextView = itemView.findViewById(R.id.characterVehicle)
-        //val characterHeight: TextView = itemView.findViewById(R.id.cha)
+        val characterHeight: TextView = itemView.findViewById(R.id.characterHeight)
         //todo
     }
 }
