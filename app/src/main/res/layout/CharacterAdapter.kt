@@ -24,6 +24,8 @@ class CharacterAdapter (private val transformers: List<Transformer>) : RecyclerV
         holder.characterImage.setImageResource(Transformer.image)
         holder.characterName.text = character.name
         holder.characterAlliance.text = character.alliance
+        holder.characterVehicle.text = character.vehicle
+        holder.characterHeight.text = character.height
     }
 
     class transformerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -32,6 +34,5 @@ class CharacterAdapter (private val transformers: List<Transformer>) : RecyclerV
         val characterAlliance: TextView = itemView.findViewById(R.id.characterAlliance)
         val characterVehicle: TextView = itemView.findViewById(R.id.characterVehicle)
         val characterHeight: TextView = itemView.findViewById(R.id.characterHeight)
-        //todo
     }
 }

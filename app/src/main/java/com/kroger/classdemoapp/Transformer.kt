@@ -5,6 +5,5 @@ data class Transformer(
         val image: Int,
         val alliance: String,
         val vehicle: String,
-        val height: Double,
-        val colors: List<String>
+        val height: String,
         )
